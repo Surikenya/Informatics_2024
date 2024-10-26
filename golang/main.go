@@ -8,5 +8,5 @@ import (
 
 func main() {
 	fmt.Println("Hljupina Daria")
-	laba4ab.Readylaba4ab()
+  laba4ab.Readylaba4ab()
 }
