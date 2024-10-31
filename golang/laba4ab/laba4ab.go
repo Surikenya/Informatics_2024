@@ -32,3 +32,4 @@ func Readylaba4ab() {
 	fmt.Print("B\n")
 	var xValues = []float64{1.16, 1.35, 1.48, 1.52, 1.96}
 	fmt.Print(CalculateB(xValues, 2.0))
+}
