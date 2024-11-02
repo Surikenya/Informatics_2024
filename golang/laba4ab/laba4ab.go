@@ -26,7 +26,7 @@ func CalculateA(xn, xk, deltaX, a float64) []float64 {
 	return spa
 }
 
-func Readylaba4ab() {
+func Readylabaa4ab() {
 	fmt.Print("A\n")
 	fmt.Print(CalculateA(1.08, 1.88, 0.16, 2), "\n")
 	fmt.Print("B\n")
