@@ -46,5 +46,6 @@ func (t *Technic) getBrand() string {
 }
 
 func (t *Technic) ProductInfo() string {
-	return fmt.Sprintf("Техника: %s, Бренд: %s, Модель техники: %s, Цвет товара: %s, Код товара: %.2f, Цена товара: %.2f", t.name, t.brand, t.model, t.color, t.code, t.price)
+	return fmt.Sprintf("Техника: %s, Бренд: %s, Модель техники: %s, Цвет товара: %s,Код товара: %.2f, Цена товара: %.2f",
+		t.name, t.brand, t.model, t.color, t.code, t.price)
 }
