@@ -12,35 +12,35 @@ type Car struct {
 	brand string
 }
 
-func (c *Car) getPrice() float64 {
+func (c *Car) GetPrice() float64 {
 	return c.price
 }
 
-func (c *Car) setPrice(newPrice float64) {
+func (c *Car) SetPrice(newPrice float64) {
 	c.price = newPrice
 }
 
-func (c *Car) applyDiscount(discount float64) {
+func (c *Car) ApplyDiscount(discount float64) {
 	c.price = (100 - discount) * c.price / 100
 }
 
-func (c *Car) getModel() string {
+func (c *Car) GetModel() string {
 	return c.model
 }
 
-func (c *Car) getName() string {
+func (c *Car) GetName() string {
 	return c.name
 }
 
-func (c *Car) getBrand() string {
+func (c *Car) GetBrand() string {
 	return c.brand
 }
 
-func (c *Car) getColor() string {
+func (c *Car) GetColor() string {
 	return c.color
 }
 
-func (c *Car) setColor(newName string) {
+func (c *Car) SetColor(newName string) {
 	c.color = newName
 }
 

@@ -13,35 +13,35 @@ type Technic struct {
 	code  float64
 }
 
-func (t *Technic) applyDiscount(discount float64) {
+func (t *Technic) ApplyDiscount(discount float64) {
 	t.price = (100 - discount) * t.price / 100
 }
 
-func (t *Technic) getPrice() float64 {
+func (t *Technic) GetPrice() float64 {
 	return t.price
 }
 
-func (t *Technic) setPrice(newPrice float64) {
+func (t *Technic) SetPrice(newPrice float64) {
 	t.price = newPrice
 }
 
-func (t *Technic) getName() string {
+func (t *Technic) GetName() string {
 	return t.name
 }
 
-func (t *Technic) getColor() string {
+func (t *Technic) GetColor() string {
 	return t.color
 }
 
-func (t *Technic) getModel() string {
+func (t *Technic) GetModel() string {
 	return t.model
 }
 
-func (t *Technic) getCode() float64 {
+func (t *Technic) GetCode() float64 {
 	return t.code
 }
 
-func (t *Technic) getBrand() string {
+func (t *Technic) GetBrand() string {
 	return t.brand
 }
 
