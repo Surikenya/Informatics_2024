@@ -10,23 +10,23 @@ type Food struct {
 	weight float64
 }
 
-func (f *Food) getPrice() float64 {
+func (f *Food) GetPrice() float64 {
 	return f.price
 }
 
-func (f *Food) setPrice(newPrice float64) {
+func (f *Food) SetPrice(newPrice float64) {
 	f.price = newPrice
 }
 
-func (f *Food) getName() string {
+func (f *Food) GetName() string {
 	return f.name
 }
 
-func (f *Food) setName(newName string) {
+func (f *Food) SetName(newName string) {
 	f.name = newName
 }
 
-func (f *Food) applyDiscount(discount float64) {
+func (f *Food) ApplyDiscount(discount float64) {
 	f.price = (100 - discount) * f.price / 100
 }
 
