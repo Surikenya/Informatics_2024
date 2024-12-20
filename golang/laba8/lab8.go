@@ -28,7 +28,7 @@ func recordingData(fileName string) {
 	}
 }
 
-func RunLab8() {
+func ReadyLab8() {
 	reader := bufio.NewReader(os.Stdin)
 
 	fmt.Println("Введите название файла:")

@@ -6,6 +6,7 @@ import (
 	"isuct.ru/informatics2022/laba4ab"
 	"isuct.ru/informatics2022/laba6"
 	"isuct.ru/informatics2022/laba7"
+	"isuct.ru/informatics2022/laba8"
 )
 
 func main() {
@@ -13,4 +14,5 @@ func main() {
 	laba4ab.Readylabaa4ab()
 	laba6.Readyylabaa6()
 	laba7.RunLab7()
+	laba8.ReadyLab8()
 }
