@@ -20,7 +20,7 @@ func recordingData(fileName string) {
 			break
 		}
 
-		err := ZapisFile(fileName, newLine)
+		err := WriteFile(fileName, newLine)
 		if err != nil {
 			fmt.Println(err)
 			return
@@ -34,7 +34,7 @@ func ReadyLab8() {
 	fmt.Println("Введите название файла:")
 	fileName, _ := reader.ReadString('\n')
 	fileName = strings.TrimSpace(fileName)
-	err := SozdanieFile(fileName)
+	err := CreateFile(fileName)
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -43,7 +43,7 @@ func ReadyLab8() {
 	fmt.Println("Введите текст для записи в файл (Если закончили - напишите 'Все')")
 	recordingData(fileName)
 
-	file, err := ChitatFile1(fileName)
+	file, err := ReadFile1(fileName)
 	if err != nil {
 		panic("Произошла ошибка при чтении файла")
 	}
@@ -52,13 +52,13 @@ func ReadyLab8() {
 	fmt.Println("Что искать в файле:")
 	searchText, _ := reader.ReadString('\n')
 	searchText = strings.TrimSpace(searchText)
-	err = PoiskTexta(fileName, searchText)
+	err = FindText(fileName, searchText)
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 
-	variables, err := ChitatFile2(fileName)
+	variables, err := ReadFile2(fileName)
 	if err != nil {
 		panic("Произошла ошибка при чтении файла")
 	}
