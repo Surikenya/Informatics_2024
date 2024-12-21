@@ -7,7 +7,7 @@ import (
 	"strconv"
 )
 
-func ChitatFile1(fileName string) (string, error) {
+func ReadFile1(fileName string) (string, error) {
 	file, err := os.ReadFile(fileName)
 	if err != nil {
 		return "", fmt.Errorf("не удается прочитать файл: %w", err)
@@ -15,7 +15,7 @@ func ChitatFile1(fileName string) (string, error) {
 	return string(file), nil
 }
 
-func ChitatFile2(fileName string) ([]float64, error) {
+func ReadFile2(fileName string) ([]float64, error) {
 	file, err := os.Open(fileName)
 	if err != nil {
 		return nil, fmt.Errorf("не удается открыть файл")

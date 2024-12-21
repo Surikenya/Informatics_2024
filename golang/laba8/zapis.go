@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func ZapisFile(fileName string, newLine string) error {
+func WriteFile(fileName string, newLine string) error {
 	file, err := os.OpenFile(fileName, os.O_WRONLY|os.O_APPEND, 0666)
 	if err != nil {
 		return fmt.Errorf("не удалось открыть файл")

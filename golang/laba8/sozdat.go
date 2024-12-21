@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func SozdanieFile(fileName string) error {
+func CreateFile(fileName string) error {
 	_, err := os.Stat(fileName)
 	if err == nil {
 		return fmt.Errorf("файл с таким названием уже существует")
