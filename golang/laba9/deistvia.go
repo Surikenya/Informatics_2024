@@ -7,15 +7,6 @@ import (
 	"strings"
 )
 
-type Task struct {
-	Description string `json:"description"`
-	IsDone      bool   `json:"is_done"`
-}
-
-type TaskList struct {
-	Tasks []Task `json:"tasks"`
-}
-
 func (t *TaskList) AddTask(description string) {
 	t.Tasks = append(t.Tasks, Task{Description: description, IsDone: false})
 }
