@@ -43,7 +43,7 @@ func ReadyLab8() {
 	fmt.Println("Введите текст для записи в файл (Если закончили - напишите 'Все')")
 	recordingData(fileName)
 
-	file, err := ReadFile1(fileName)
+	file, err := ReadForLaba4(fileName)
 	if err != nil {
 		panic("Произошла ошибка при чтении файла")
 	}
@@ -58,7 +58,7 @@ func ReadyLab8() {
 		return
 	}
 
-	variables, err := ReadFile2(fileName)
+	variables, err := ReadFile(fileName)
 	if err != nil {
 		panic("Произошла ошибка при чтении файла")
 	}
