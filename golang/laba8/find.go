@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func PoiskTexta(fileName string, searchText string) error {
+func FindText(fileName string, searchText string) error {
 	file, err := os.Open(fileName)
 	if err != nil {
 		return fmt.Errorf("не удается открыть файл")
