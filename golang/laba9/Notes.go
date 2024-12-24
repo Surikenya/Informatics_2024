@@ -1,6 +1,6 @@
 package laba9
 
-type Zametcki interface {
+type Notes interface {
 	AddTask(description string)
 	ShowTasks()
 	UpdateTaskStatus(index int)
