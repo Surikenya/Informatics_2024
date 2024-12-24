@@ -13,7 +13,7 @@ func Readylab9() {
 		return
 	}
 
-	var taskMenu Zametcki = tasks
+	var taskMenu Notes = tasks
 
 	for {
 		fmt.Println("\nМеню доступных задач:")
