@@ -58,11 +58,11 @@ func Readylab9() {
 
 		case 6:
 			err := SaveData(filename, tasks)
-			if err == null {
-  			  fmt.Println("Данные успешно сохранены.")
-			  break
+			if err == nil {
+				fmt.Println("Данные успешно сохранены.")
+				break
 			}
-
+			
 			fmt.Println("Не удалось сохранить данные, ошибка:", err)
 			return
 
